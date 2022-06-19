@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+            My family BOOK
+        </title>
+
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+    </head>
+    <body style="background-color:rgb(0, 225, 255);"></body>
+        <center style="margin-top: 40px;">
+            <h1>
+                MY FAMILY BOOK
+            </h1>
+
+            <img src="https://i.postimg.cc/MKdhy06Z/family.jpg" id="family_member_image" width="300px" height="400px">
+            <h4 id="family_member_name"></h4>
+            <button onclick="update();">NEXT</button>
+           
+         </center>
+<script>
+ var images = ["https://www.pngkit.com/png/detail/436-4361980_daddy-clipart-free-clipart-images-father-clipart.png","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLxHHKghxk_PyTvtZQG8JeRL_ISGEhMOM0Ij0iaxODvzjEwXw3KrAM-UBMPPa7Ntr0gfA&usqp=CAU","https://www.clipartkey.com/mpngs/m/21-212277_png-pinterest-clip-school-boy-cartoon-png.png","https://th.bing.com/th/id/OIP.p8lH8SGjjkG4LMKMGOzAvwHaH9?pid=ImgDet&rs=1","https://media.istockphoto.com/vectors/happy-smiling-old-man-grandpa-watch-tv-show-vector-id859461860?k=6&m=859461860&s=612x612&w=0&h=5lPEp2GANX_OxuaHgWwO6M7LEbiEu6Yb7XPm5ungcb4="];
+            var names = ["Dad","Mom","(Me) Abhishek","Grandma","Grandpa"];
+            var i = 0;
+            function update()
+            {
+                i++;
+                var numbers_of_family_member_in_array = 4
+                if(i > numbers_of_family_member_in_array )
+                {
+                    i = 0;
+                }
+                var updatedImage = images[i];
+                var updatedName  = names[i];
+                document.getElementById("family_member_image").src = updatedImage;
+                document.getElementById("family_member_name").innerHTML = updatedName;
+            }
+
+
+</script>
+    </body>
+</html>
